@@ -20,6 +20,16 @@ services:
     networks:
       - app-network
 
+  composer:
+    image: composer
+    container_name: composer
+    volumes:
+      - ./www:/app
+    working_dir: /app
+    command: [ "install" ]
+    networks:
+      - app-network
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin

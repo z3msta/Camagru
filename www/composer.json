@@ -1,0 +1,12 @@
+{
+    "name": "mehdi/mvc",
+    "description": "MVC PHP framework",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "app/"
+        ]
+    }
+}
