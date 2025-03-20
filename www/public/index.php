@@ -1,4 +1,4 @@
-require_once '../config/config.php';
-require_once '../vendor/autoload.php';
+<?php
+require_once '../app/config/config.php';
 
-<?php echo "WELCOME!" ?>
+echo "WELCOME!";
