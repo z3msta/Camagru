@@ -12,7 +12,7 @@ class User
 
     public function getAllusers()
     {
-        $this->db->query("SELECT * FROM users");
+        $this->db->query("SELECT * FROM user");
         $this->db->execute();
     }
 
