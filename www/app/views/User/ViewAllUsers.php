@@ -26,5 +26,5 @@
         <?php endforeach; ?>
     </table>
     <!-- Link to add a new book -->
-    <a href="<?= BASE_URL ?>user/add">Add new user</a>
+    <a href="<?= BASE_URL ?>user/AddUser">Add new user</a>
 </div>
