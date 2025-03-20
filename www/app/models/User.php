@@ -10,7 +10,7 @@ class User
         $this->db = new Database();
     }
 
-    public function gettAllusers()
+    public function getAllusers()
     {
         $this->db->query("SELECT * FROM users");
         $this->db->execute();

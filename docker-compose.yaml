@@ -1,11 +1,16 @@
 services:
   web:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: php:8.2-apache
     container_name: php-apache
     ports:
       - "8080:80"
     volumes:
       - ./www:/var/www/html
+    depends_on:
+      - db
     networks:
       - app-network
 

@@ -1,4 +1,14 @@
 <?php
-require_once '../app/config/config.php';
+// Include the configuration file
+require_once "../app/config/config.php";
 
-echo "WELCOME!";
+// Include the Database class file
+require_once "../app/core/Database.php";
+
+// Include the Controller class file
+require_once "../app/core/Controller.php";
+
+// Include the App class file
+require_once "../app/core/App.php";
+
+$app = new App();

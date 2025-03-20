@@ -19,7 +19,7 @@ class Database
     public function __construct()
     {
         // Data Source Name (DSN) for the PDO connection
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname . ';port=' . $this->dbport;
+        $dsn = 'mysql:host=' . $this->host . ':' . $this->dbport . ';dbname=' . $this->dbname . ";charset=utf8";
 
         // Options for the PDO connection
         $options = [
