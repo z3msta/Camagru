@@ -15,5 +15,5 @@
         </fieldset>
         <button type="submit">Add User</button>
     </form>
-    <a href="<?= BASE_URL ?>ViewAllUsers">View All Users</a>
+    <a href="<?= BASE_URL ?>">View All Users</a>
 </div>

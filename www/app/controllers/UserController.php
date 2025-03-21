@@ -14,7 +14,7 @@ class UserController extends Controller
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $userModel = $this->loadModel("User");
             $userModel->addUser($_POST['username'], $_POST['email'], $_POST['password']);
-            header('Location: ' . BASE_URL . 'users');
+            header('Location: ' . BASE_URL);
         }
         $this->renderView('User/AddUser');
     }

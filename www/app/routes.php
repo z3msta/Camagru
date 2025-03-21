@@ -12,7 +12,7 @@ $routes = [
 //    'book/id' => ['controller' => 'BookController', 'method' => 'bookById'],
 //
     // Route for adding a new book, maps to the 'addBook' method of 'BookController'
-    'User/AddUser' => ['controller' => 'UserController', 'method' => 'addUser'],
+    'user/addUser' => ['controller' => 'UserController', 'method' => 'addUser'],
 //
 //    // Route for deleting a book, maps to the 'delete' method of 'BookController'
 //    'book/delete' => ['controller' => 'BookController', 'method' => 'deleteBook'],
