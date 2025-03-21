@@ -14,9 +14,10 @@ class User
     {
         $this->db->query("SELECT * FROM user");
         $this->db->execute();
+        return $this->db->results();
     }
 
-    public function addUser($email, $password, $username)
+    public function addUser($username, $email, $password)
     {
         $this->db->query("INSERT INTO user (email, password, username) VALUES (:email, :password, :username)");
         $this->db->bind(':email', $email);
