@@ -47,10 +47,18 @@ class User
         $this->db->execute();
     }
 
-    public function getUserById($id)
+    public function getUser($username)
     {
-        $this->db->query("SELECT * FROM user WHERE id = :id");
-        $this->db->bind(':id', $id);
+        $this->db->query("SELECT * FROM user WHERE username = :username");
+        $this->db->bind(':username', $username);
+        $this->db->execute();
+        return $this->db->result();
+    }
+
+    public function getEmail($email)
+    {
+        $this->db->query("SELECT * FROM user WHERE email = :email");
+        $this->db->bind(':email', $email);
         $this->db->execute();
         return $this->db->result();
     }
